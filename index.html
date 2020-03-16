@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Just Fun 😁</title>
+</head>
+<body>
+    <!-- Navigation Area -->
+    <header class="header">
+        <div class="container">
+            <div class="headerSec">
+                <div class="siteLogo">
+                    <img src="images/logo.png" alt="Website Logo">
+                </div>
+                <nav class="navigation" id="nav">
+                    <ul>
+                        <li><a href="#">Red</a></li>
+                        <li><a href="#">Green</a></li>
+                        <li><a href="#">Blue</a></li>
+                        <li><a href="#">Yellow</a></li>
+                        <li><a href="#">Pink</a></li>
+                        <li><a href="#">Purple</a></li>
+                    </ul>
+                </nav>
+                <div class="clickable" id="btn" onclick="myFunc()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Area End-->
+
+    <!-- Main Section Area. -->
+    <section class="section">
+        <div class="container">
+            <div class="mainSection">
+                <h2>I <img src="images/love.png" alt="Love logo"> Color</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero libero nemo odio suscipit nesciunt aperiam!</p>
+                <a href="#">Over to you</a>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section Area. End -->
+    
+    <!-- main content -->
+    <section class="content">
+        <div class="container">
+            <div class="mainContainer">
+                <div class="proItem">
+                    <img src="images/pro1.png" alt="Demo img">
+                    <h3>Blue</h3>
+                    <p>Lorem ipsum dolor sit amet, nec at timeam aperiri, alii adipisci forensibus duo at. Sea no dicant argumentum, persius adversarium vel id.</p>
+                </div>
+                <div class="proItem">
+                    <img src="images/pro2.png" alt="Demo img">
+                    <h3>Blue</h3>
+                    <p>Lorem ipsum dolor sit amet, nec at timeam aperiri, alii adipisci forensibus duo at. Sea no dicant argumentum, persius adversarium vel id.</p>
+                </div>
+                <div class="proItem">
+                    <img src="images/pro3.png" alt="Demo img">
+                    <h3>Blue</h3>
+                    <p>Lorem ipsum dolor sit amet, nec at timeam aperiri, alii adipisci forensibus duo at. Sea no dicant argumentum, persius adversarium vel id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content End -->
+
+
+    <script>
+        function myFunc() {
+            var nav = document.getElementById('nav');
+            nav.classList.toggle('myClass');
+
+            var btn = document.getElementById('btn');
+            btn.classList.toggle('rotateClass')
+        }
+        
+    </script>
+</body>
+</html>
